@@ -1,0 +1,446 @@
+:root{
+    --main-color:#008148;
+    --second-color:#1e3932;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.info {
+    margin: 40px 0;
+    text-align: center;
+}
+.info  p{
+    font-size: 20px;
+    color: var(--second-color);
+    margin-bottom: 6px;
+}
+.info  h2{
+    font-size: 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10px;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    width: 100%;
+}
+header .container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header  .logo img{
+    width: 40px;
+}
+
+header .header{
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin-left: 20px;
+
+}
+header ul li a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}    
+header  ul li a:hover{
+    color: var(--main-color);
+}
+
+
+.home{
+    background-color: #ebdbc8;
+    min-height: 100vh;
+    display: flex;
+}
+.home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+.home .home-content span{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--second-color);
+    font-weight: 600;
+}
+.home .home-content h1{
+    color:var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
+}
+.home .home-content h2{
+    color: var(--second-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.btn{
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid var(--second-color);
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--second-color);
+    
+}
+
+.home .home-img{
+    width: 600px;
+}
+.home  .home-img img{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px , 0);
+    }
+    50%{
+        transform: translate(0 , -11px);
+    }
+    0%{
+        transform: translate(-11px , 0);
+    }
+}
+
+
+
+
+
+
+
+.showp-coffee .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.showp-coffee .box{
+    flex:  1 1 10rem;
+    display: flex;
+    background-color : var(--main-color);
+    color: #ccc;
+    border-radius: 5px;
+    margin-top: 3rem;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    }
+.showp-coffee  .boxs .box div{
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+    
+}
+.showp-coffee  .boxs .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+}
+.showp-coffee .boxs .box .stars{
+    margin: 1rem 0 0.1rem;
+    text-align: center;
+}
+.showp-coffee  .boxs .box h2{
+    color: #ebdbc8;
+    font-size: 25px;
+    margin-top: -104px;
+}
+.showp-coffee  .boxs .box span {
+    margin: 0.2rem  0 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*
+
+
+
+
+
+
+.showp-coffee .boxs .box button {
+    color: #ccc;
+    border: 1px solid #ccc;
+    background-color: #154204;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.showp-coffee  .boxs .box button:hover{
+    color: black;
+    background-color:   rgb(240, 233, 224);
+}
+*/
+.deliery,
+.app,
+.about,
+.contact{
+    padding:  30px 0;
+}
+.deliery  .boxs,
+.app .boxs,
+.about .boxs{
+    display: flex;
+    gap: 20px;
+}
+.deliery  .boxs .box img,
+.app  .boxs .box img,
+.about .boxs .box img{
+    width: 500px;
+}
+.deliery .boxs .box h3,
+.app  .boxs .box h3{
+    color: var(--second-color);
+}
+.deliery  .boxs .box p,
+.app  .boxs .box p,
+.about .boxs .box p{
+    padding: 10px 0;
+    line-height: 25px;
+    
+}
+
+.about{
+    background-color: #ebdbc8;
+}
+
+.contact{
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+@media (max-width:1150px) {
+    header{
+        padding: 18px 7%;
+    }
+    .home{
+        padding: 50px 7%;
+    }
+    .home .home-content h1{
+        font-size: 3rem;
+    }
+    .home .home-content h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:991px) {
+    header{
+        padding: 18px 4%;
+    }
+    .home{
+        padding: 50px 4%;
+    }
+}
+
+
+@media (max-width:768px) {
+    header{
+        padding: 11px 4%;
+    }
+    header .header{
+        display: block;
+    }
+    header ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: #fff;
+        box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--second-color);
+        top: -500px;
+    }
+    .active{
+        top: 100%;
+    }
+    header ul a{
+        padding: 25px;
+        color: var(--second-color);
+        display: block;
+    }
+    .home .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .home .container .home-content{
+        padding-top: 90px;
+    }
+    .deliery  .boxs,
+    .app .boxs,
+    .about .boxs{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+.contact span{
+    display: block;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+@media (max-width: 500px ){
+    header{
+        width: 94%;
+        padding: 10px 5px;
+        margin-right: 6%;
+    }
+    .home-img{
+        width: 400px !important;
+    }
+    .showp-coffee .box {
+        margin-bottom:20px ;
+    }
+    .app .box img,
+    .deliery .box img{
+        width: 400px !important;
+    }
+}
