@@ -57,6 +57,7 @@ header{
     background-color: #fff;
     transition: 0.3s;
     width: 100%;
+    position: absolute;
 }
 header .container{
     align-items: center;
@@ -100,6 +101,7 @@ header  ul li a:hover{
     background-color: #ebdbc8;
     min-height: 100vh;
     display: flex;
+    position: relative;
 }
 .home .container{
     display: flex;
@@ -428,19 +430,19 @@ header  ul li a:hover{
 }
 
 @media (max-width: 500px ){
-    header{
-        width: 94%;
-        padding: 10px 5px;
-        margin-right: 6%;
+    
+    .home{
+        width: 100%;
     }
     .home-img{
-        width: 400px !important;
+        width: 300px !important;
     }
     .showp-coffee .box {
         margin-bottom:20px ;
     }
     .app .box img,
-    .deliery .box img{
-        width: 400px !important;
+    .deliery .box img,
+    .about .box img{
+        width: 300px !important;
     }
 }
